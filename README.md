@@ -1,15 +1,15 @@
-# WASH: Weekly Academic Schedule Helper
+# W.A.S.H: Weekly Academic Schedule Helper
 
 ## About The Project
-WASH (Weekly Academic Schedule Helper), designed for SFU Computing Science students, is an AI-powered tool that makes course pre-requisite planning and deadline tracking easier! This project is built with Next.js and Tailwind CSS.
+W.A.S.H (Weekly Academic Schedule Helper), designed for SFU Computing Science students, is an AI-powered tool that makes course pre-requisite planning and deadline tracking easier! This project is built with Next.js and Tailwind CSS.
 
 ## About the Developers and Designers 
 This project was developed during Storm Forge 2024-2025, a project-building and mentorship program ran by SFU Surge. Our team members are:
-- Emily (Developer)
-- Kaylee (Developer)
-- Mara (Developer)
-- Stella (Developer)
-- Bianca (Developer, Designer)
+- @emilyquan: Emily (Developer)
+- @mini9yo: Kaylee (Developer)
+- @maraliwayway: Mara (Developer)
+- @stella05925: Stella (Developer)
+- @biancadimaano: Bianca (Developer, Designer)
   
 ## Getting Started
 
