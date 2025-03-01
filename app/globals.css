@@ -7,9 +7,9 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 176 38% 76%;
 
-    --foreground: 222.2 84% 4.9%;
+    --foreground: 0 0% 98%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -82,3 +82,4 @@
 .font-display{
   font-family: "Darumadrop One", sans-serif;
 }
+
