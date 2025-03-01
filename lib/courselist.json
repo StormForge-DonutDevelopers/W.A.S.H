@@ -1,0 +1,674 @@
+[
+  {
+    "name": "",
+    "description": ""
+  },
+  {
+    "name": "CMPT 102",
+    "description": ""
+  },
+  {
+    "name": "CMPT 105W",
+    "description": ""
+  },
+  {
+    "name": "CMPT 106",
+    "description": ""
+  },
+  {
+    "name": "CMPT 110",
+    "description": "BC Mathematics 12 (or equivalent) or any 100-level MATH course with a minimum grade of C-. Students who have obtained credit for, or are currently enrolled in a computing science course at the 200-level or higher, or ITEC 240, 241 or 242 may not take CMPT 110 for further credit except with permission of the School of Computing Science. Quantitative."
+  },
+  {
+    "name": "CMPT 115",
+    "description": ""
+  },
+  {
+    "name": "CMPT 118",
+    "description": ""
+  },
+  {
+    "name": "CMPT 120",
+    "description": "BC Math 12 or equivalent is recommended.  Students with credit for CMPT 102, 128, 130 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129, 130 or 135 first may not then take this course for further credit. Quantitative/Breadth-Science."
+  },
+  {
+    "name": "CMPT 125",
+    "description": "CMPT 120 or CMPT 130, with a minimum grade of C-. Students with credit for CMPT 126, 129, 135 or CMPT 200 or higher may not take this course for further credit. Quantitative."
+  },
+  {
+    "name": "CMPT 128",
+    "description": "BC Math 12 (or equivalent, or any of MATH 100, 150, 151, 154, or 157, with a minimum grade of C-). Students with credit for CMPT 102, 120, 130 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129, 135, or CMPT 200 or higher first may not then take this course for further credit. Quantitative/Breadth-Science."
+  },
+  {
+    "name": "CMPT 129",
+    "description": "CMPT 102 or CMPT 120, with a minimum grade of C-. Students with credit for CMPT 125 or 135 may not take this course for further credit. Quantitative."
+  },
+  {
+    "name": "CMPT 130",
+    "description": "BC Math 12 (or equivalent, or any of MATH 100, 150, 151, 154, or 157, with a minimum grade of C-). Students with credit for CMPT 102, 120, 128 or 166 may not take this course for further credit. Students who have taken CMPT 125, 129 or 135 first may not then take this course for further credit. Quantitative/Breadth-Science."
+  },
+  {
+    "name": "CMPT 135",
+    "description": "CMPT 130 with a minimum grade of C-. Students with credit for CMPT 125, 126, or 129 may not take this course for further credit. Quantitative."
+  },
+  {
+    "name": "CMPT 166",
+    "description": "Recommended: BC Math 12 or equivalent. Students with credit for CMPT 102, 120, 128 or 130 may not take this course for further credit. Students who have taken CMPT 125, 129 or 135 first may not then take this course for further credit. Quantitative/Breadth-Science."
+  },
+  {
+    "name": "CMPT 201",
+    "description": "(CMPT 125 or CMPT 135) and MACM 101, both with a minimum grade of C-. Students who have taken CMPT 300 first may not then take this course for further credit."
+  },
+  {
+    "name": "CMPT 210",
+    "description": "MACM 101, MATH 152, CMPT 125 or CMPT 135, and (MATH 240 or MATH 232), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 213",
+    "description": "CMPT 225 with a minimum grade of C-. Students with credit for CMPT 212 cannot take this course for further credit."
+  },
+  {
+    "name": "CMPT 218",
+    "description": ""
+  },
+  {
+    "name": "CMPT 225",
+    "description": "(MACM 101 and (CMPT 125, CMPT 129 or CMPT 135)) or (ENSC 251 and ENSC 252), all with a minimum grade of C-. Quantitative."
+  },
+  {
+    "name": "CMPT 263",
+    "description": "CMPT 125 or CMPT 135, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 272",
+    "description": "CMPT 120 or CMPT 130 or CMPT 128, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 275",
+    "description": "One W course, CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (MATH 151 or MATH 150), all with a minimum grade of C-. MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150. Students with credit for CMPT 276 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 276",
+    "description": "One W course, CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (MATH 151 or MATH 150), all with a minimum grade of C-. MATH 154 or MATH 157 with at least a B+ may be substituted for MATH 151 or MATH 150. Students with credit for CMPT 275 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 295",
+    "description": "Either (MACM 101 and (CMPT 125 or CMPT 135)) or (MATH 151 and CMPT 102 for students in an Applied Physics program), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 300",
+    "description": "CMPT 225 and (CMPT 295 or ENSC 254), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 303",
+    "description": "CMPT 225, (CMPT 295 or ENSC 254), and (CMPT 201 or ENSC 351), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 305",
+    "description": "CMPT 225, (MACM 101 or (ENSC 251 and ENSC 252)) and (STAT 270 or STAT 271), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 307",
+    "description": "CMPT 225, (MACM 201 or CMPT 210), (MATH 150 or MATH 151), and (MATH 232 or MATH 240), all with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 150 or MATH 151."
+  },
+  {
+    "name": "CMPT 308",
+    "description": "(MACM 201 or CMPT 210) with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 310",
+    "description": "CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 318",
+    "description": "CMPT 225 with a minimum grade of C-. Additional prerequisites to be determined by the instructor subject to approval by the undergraduate program chair."
+  },
+  {
+    "name": "CMPT 320",
+    "description": "A CMPT course with a minimum grade of C- and 45 units. Breadth-Science."
+  },
+  {
+    "name": "CMPT 340",
+    "description": "Completion of 60 units including one of CMPT 125, 126, 128, 135, with a minimum grade of C- or CMPT 102 with a grade of B or higher."
+  },
+  {
+    "name": "CMPT 353",
+    "description": "CMPT 225 and (BUS 232, STAT 201, STAT 203, STAT 205, STAT 270, STAT 271, ENSC 280, MSE 210, or SEE 241), with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 354",
+    "description": "CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 361",
+    "description": "CMPT 225 and MATH 232 or 240, all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 362",
+    "description": "CMPT 225 with a minimum grade of C-. Students with credit for IAT 359 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 363",
+    "description": "CMPT 225 and CMPT 263, both with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 365",
+    "description": "CMPT 225 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 371",
+    "description": "CMPT 225 and (MATH 151 or MATH 150), with a minimum grade of C-. MATH 154 or MATH 157 with a grade of at least B+ may be substituted for MATH 151 (MATH 150)."
+  },
+  {
+    "name": "CMPT 372",
+    "description": "CMPT 272 and CMPT 225, both with a minimum grade of C-. Students with credit for CMPT 470 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 373",
+    "description": "CMPT 276 or 275, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 376W",
+    "description": "CMPT 105W and (CMPT 275 or CMPT 276), with a minimum grade of C-. Writing."
+  },
+  {
+    "name": "CMPT 379",
+    "description": "(MACM 201 or CMPT 210), (CMPT 295 or ENSC 215) and CMPT 225, all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 383",
+    "description": "CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 384",
+    "description": "CMPT 225 and (MACM 101 or (ENSC 251 and ENSC 252)), all with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 400",
+    "description": "CMPT 361 and MACM 316, both with a minimum grade of C-. Recommended: MATH 251. Students who have taken CMPT 469 under the title \"3D Computer Vision\" offered in Spring 2024 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 403",
+    "description": "CMPT 201 or CMPT 300, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 404",
+    "description": "(MACM 201 or CMPT 210) with a minimum grade of C-. CMPT 307 and 308 are recommended."
+  },
+  {
+    "name": "CMPT 405",
+    "description": "CMPT 307 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 406",
+    "description": "CMPT 307 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 407",
+    "description": "CMPT 307 with a minimum grade of C-. CMPT 308 is recommended."
+  },
+  {
+    "name": "CMPT 409",
+    "description": "CMPT 307 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 410",
+    "description": "CMPT 310 and MACM 316, both with a minimum grade of C-. Students with credit for CMPT 419 under the title \"Machine Learning\" may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 411",
+    "description": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor."
+  },
+  {
+    "name": "CMPT 412",
+    "description": "CMPT 361 and MATH 152, both with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 413",
+    "description": "Completion of nine units in Computing Science upper division courses or, in exceptional cases, permission of the instructor."
+  },
+  {
+    "name": "CMPT 415",
+    "description": "Permission of Instructor and School."
+  },
+  {
+    "name": "CMPT 416",
+    "description": "Permission of the department."
+  },
+  {
+    "name": "CMPT 417",
+    "description": "CMPT 225 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 419",
+    "description": ""
+  },
+  {
+    "name": "CMPT 420",
+    "description": "CMPT 410 or CMPT 419 (Machine Learning), with a minimum grade of C-. Students with credit for CMPT 728 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 426",
+    "description": "Students must complete Bridging Online (visit www.sfu.ca/coop/bol for further details) at least two terms before their anticipated co-op placement. Students must then enroll with the co-op program by the second week of the term preceding the work term. Normally, students will have completed a minimum of 45 units by the end of the term of application, CMPT 275 or 276, and have a minimum CGPA of 2.50."
+  },
+  {
+    "name": "CMPT 427",
+    "description": "CMPT 426, CGPA of 2.50."
+  },
+  {
+    "name": "CMPT 428",
+    "description": "CMPT 427, CGPA of 2.50."
+  },
+  {
+    "name": "CMPT 429",
+    "description": "CMPT 428, CGPA of 2.50."
+  },
+  {
+    "name": "CMPT 430",
+    "description": "CMPT 429, CGPA of 2.50."
+  },
+  {
+    "name": "CMPT 431",
+    "description": "(CMPT 201 or CMPT 300) and CMPT 371, both with a minimum grade of C-. Students with credit for CMPT 401 before September 2008 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 433",
+    "description": "(CMPT 201 or CMPT 300) and CMPT 295, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 441",
+    "description": "CMPT 307 with a minimum grade of C-.  Students with credit for CMPT 341 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 450",
+    "description": "CMPT 295 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 454",
+    "description": "(CMPT 201 or CMPT 300) and CMPT 354, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 456",
+    "description": "CMPT 354 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 459",
+    "description": "CMPT 354 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 461",
+    "description": "CMPT 361 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 464",
+    "description": "CMPT 361, MACM 316, both with a minimum grade of C-.  Students with credit for CMPT 469 between 2003 and 2007 or equivalent may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 466",
+    "description": "CMPT 361 and MACM 316, with a minimum grade of C- or permission of the instructor."
+  },
+  {
+    "name": "CMPT 467",
+    "description": "CMPT 361, MACM 316, both with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 469",
+    "description": "CMPT 361 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 471",
+    "description": "(CMPT 201 or CMPT 300) and CMPT 371, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 473",
+    "description": "(CMPT 275 or CMPT 276) with a minimum grade of C- and 15 upper division CMPT units."
+  },
+  {
+    "name": "CMPT 474",
+    "description": "CMPT 371 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 475",
+    "description": "CMPT 275 or CMPT 276, (MACM 201 or CMPT 210) , all with a minimum grade of C- and 15 units of upper division courses. Recommended: Co-op experience."
+  },
+  {
+    "name": "CMPT 476",
+    "description": "MATH 232 or MATH 240, with a minimum grade of C-. Students with credit for MACM 476 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 477",
+    "description": "CMPT 275 or 276, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 478",
+    "description": "CMPT 476 or PHYS 416, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 479",
+    "description": "CMPT 201 or CMPT 300, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 489",
+    "description": "CMPT 383 with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 493",
+    "description": "CMPT 275 or CMPT 276, at least 80 units, CGPA and UDGPA over 3.0, enrolled in any CS major program. Participation in the practicum is competitive and an application must be submitted to the Undergraduate Chair by a defined due date announced each term."
+  },
+  {
+    "name": "CMPT 494",
+    "description": "Students must have completed at least 15 units of upper division CMPT courses. Successful Capstone Project Proposal."
+  },
+  {
+    "name": "CMPT 495",
+    "description": "CMPT 494 with a minimum grade of C-. CMPT 495 must be taken in the term immediately following the successful completion of CMPT 494 and must be for the same project and faculty supervisor."
+  },
+  {
+    "name": "CMPT 496",
+    "description": "Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the undergraduate chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+  },
+  {
+    "name": "CMPT 497",
+    "description": "Submission of a satisfactory capstone project proposal."
+  },
+  {
+    "name": "CMPT 498",
+    "description": "Students must have completed 90 units, including 15 units of upper division CMPT courses, and have a GPA of at least 3.00. The proposal must be submitted to the Undergraduate Chair at least 15 days in advance of the term. The proposal must be signed by the supervisor(s) and the undergraduate chair."
+  },
+  {
+    "name": "CMPT 499",
+    "description": "CMPT 250 or ENSC 250, with a minimum grade of C-."
+  },
+  {
+    "name": "CMPT 626",
+    "description": "12 units of CMPT coursework at the 700-level or higher with a CGPA of at least 3.0. Department Consent is required for enrollment."
+  },
+  {
+    "name": "CMPT 627",
+    "description": "CMPT 626 and a CGPA of at least 3.0. Department Consent is required for enrollment."
+  },
+  {
+    "name": "CMPT 628",
+    "description": "CMPT 627 and a CGPA of at least 3.0. Department Consent is required for enrollment."
+  },
+  {
+    "name": "CMPT 629",
+    "description": "Permission of the Graduate Program Chair."
+  },
+  {
+    "name": "CMPT 631",
+    "description": "12 units of CMPT course work with an SFU CGPA of at least 3.0. Approval of supervisor and a GPC representative is required prior to applying for, or accepting an internship."
+  },
+  {
+    "name": "CMPT 700",
+    "description": ""
+  },
+  {
+    "name": "CMPT 701",
+    "description": ""
+  },
+  {
+    "name": "CMPT 705",
+    "description": ""
+  },
+  {
+    "name": "CMPT 706",
+    "description": ""
+  },
+  {
+    "name": "CMPT 710",
+    "description": ""
+  },
+  {
+    "name": "CMPT 711",
+    "description": ""
+  },
+  {
+    "name": "CMPT 713",
+    "description": ""
+  },
+  {
+    "name": "CMPT 720",
+    "description": ""
+  },
+  {
+    "name": "CMPT 721",
+    "description": "CMPT 310/710 recommended. Cross-listed course with CMPT 411."
+  },
+  {
+    "name": "CMPT 722",
+    "description": "CMPT 361 or equivalent and CMPT 726."
+  },
+  {
+    "name": "CMPT 724",
+    "description": ""
+  },
+  {
+    "name": "CMPT 726",
+    "description": ""
+  },
+  {
+    "name": "CMPT 727",
+    "description": ""
+  },
+  {
+    "name": "CMPT 728",
+    "description": ""
+  },
+  {
+    "name": "CMPT 729",
+    "description": ""
+  },
+  {
+    "name": "CMPT 732",
+    "description": "This course is only available to students enrolled in the master of science in big data program."
+  },
+  {
+    "name": "CMPT 733",
+    "description": "CMPT 732."
+  },
+  {
+    "name": "CMPT 740",
+    "description": ""
+  },
+  {
+    "name": "CMPT 741",
+    "description": ""
+  },
+  {
+    "name": "CMPT 742",
+    "description": "This course is only available to students enrolled in the master of visual computing program."
+  },
+  {
+    "name": "CMPT 743",
+    "description": "CMPT 742. This course is only available to students enrolled in the master of visual computing program."
+  },
+  {
+    "name": "CMPT 750",
+    "description": "Recommended: CMPT 295 or equivalent. Students with credit for CMPT 450 may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 756",
+    "description": ""
+  },
+  {
+    "name": "CMPT 757",
+    "description": "This course is only available to students enrolled into the Visual Computing Specialization of the Professional Master's program in Computer Science."
+  },
+  {
+    "name": "CMPT 762",
+    "description": ""
+  },
+  {
+    "name": "CMPT 763",
+    "description": ""
+  },
+  {
+    "name": "CMPT 764",
+    "description": "CMPT 361, MACM 316.  Students with credit for CMPT 464 or equivalent may not take this course for further credit."
+  },
+  {
+    "name": "CMPT 766",
+    "description": ""
+  },
+  {
+    "name": "CMPT 767",
+    "description": ""
+  },
+  {
+    "name": "CMPT 769",
+    "description": ""
+  },
+  {
+    "name": "CMPT 770",
+    "description": ""
+  },
+  {
+    "name": "CMPT 771",
+    "description": ""
+  },
+  {
+    "name": "CMPT 772",
+    "description": ""
+  },
+  {
+    "name": "CMPT 777",
+    "description": ""
+  },
+  {
+    "name": "CMPT 780",
+    "description": ""
+  },
+  {
+    "name": "CMPT 782",
+    "description": "This course is only available to students enrolled in the master of cybersecurity program."
+  },
+  {
+    "name": "CMPT 783",
+    "description": "CMPT 782. This course is only available to students enrolled in the master of cybersecurity program."
+  },
+  {
+    "name": "CMPT 784",
+    "description": ""
+  },
+  {
+    "name": "CMPT 785",
+    "description": ""
+  },
+  {
+    "name": "CMPT 786",
+    "description": ""
+  },
+  {
+    "name": "CMPT 787",
+    "description": ""
+  },
+  {
+    "name": "CMPT 788",
+    "description": ""
+  },
+  {
+    "name": "CMPT 789",
+    "description": ""
+  },
+  {
+    "name": "CMPT 800",
+    "description": ""
+  },
+  {
+    "name": "CMPT 813",
+    "description": ""
+  },
+  {
+    "name": "CMPT 815",
+    "description": ""
+  },
+  {
+    "name": "CMPT 820",
+    "description": ""
+  },
+  {
+    "name": "CMPT 822",
+    "description": ""
+  },
+  {
+    "name": "CMPT 827",
+    "description": ""
+  },
+  {
+    "name": "CMPT 828",
+    "description": ""
+  },
+  {
+    "name": "CMPT 829",
+    "description": "Permission of the instructor."
+  },
+  {
+    "name": "CMPT 839",
+    "description": "CMPT 413 or CMPT 713, CMPT 726 or CMPT 728."
+  },
+  {
+    "name": "CMPT 843",
+    "description": ""
+  },
+  {
+    "name": "CMPT 863",
+    "description": ""
+  },
+  {
+    "name": "CMPT 886",
+    "description": ""
+  },
+  {
+    "name": "CMPT 889",
+    "description": ""
+  },
+  {
+    "name": "CMPT 894",
+    "description": ""
+  },
+  {
+    "name": "CMPT 895",
+    "description": ""
+  },
+  {
+    "name": "CMPT 896",
+    "description": ""
+  },
+  {
+    "name": "CMPT 897",
+    "description": ""
+  },
+  {
+    "name": "CMPT 898",
+    "description": ""
+  },
+  {
+    "name": "CMPT 899",
+    "description": ""
+  },
+  {
+    "name": "CMPT 980",
+    "description": "Instructor discretion."
+  },
+  {
+    "name": "CMPT 981",
+    "description": ""
+  },
+  {
+    "name": "CMPT 982",
+    "description": ""
+  },
+  {
+    "name": "CMPT 983",
+    "description": ""
+  },
+  {
+    "name": "CMPT 984",
+    "description": ""
+  },
+  {
+    "name": "CMPT 985",
+    "description": ""
+  }
+]
