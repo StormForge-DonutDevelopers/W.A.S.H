@@ -1,7 +1,10 @@
+/* Importing fonts */
+@import url("https://fonts.googleapis.com/css2?family=Darumadrop+One&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -74,4 +77,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+.font-display{
+  font-family: "Darumadrop One", sans-serif;
 }
