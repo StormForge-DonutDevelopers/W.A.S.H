@@ -1,0 +1,11 @@
+body{
+    background-color: #7DB4C5;
+}
+
+h1{
+    color: #FBFBFB;
+}
+
+h1 ~ p{
+    color: #FBFBFB;
+}
