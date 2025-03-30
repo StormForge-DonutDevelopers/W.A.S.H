@@ -5,7 +5,7 @@ import { title } from "process";
 export const DEGREE_REQUIREMENTS = [
   {
       name: "Lower Division Requirements",
-      required: "51-52 units",
+      required: 13,
       courses: [
           { 
             title: "CMPT 105W", 
@@ -76,7 +76,7 @@ export const DEGREE_REQUIREMENTS = [
   },
   {
       name: "Upper Division Requirements",
-      required: "39-45 units",
+      required: 15,
       courses: [
         { title: "CMPT 307", name: "Data Structures and Algorithms", credits: 3 },
         { title: "CMPT 376W", name: "Professional Responsibility and Technical Writing", credits: 3 },
