@@ -240,7 +240,6 @@
 
 // app/api/chat/route.ts
 import { NextRequest } from 'next/server'
-import { StreamingTextResponse } from 'ai'
 
 // A set of predefined responses for common questions
 const predefinedResponses = {
@@ -257,7 +256,6 @@ const predefinedResponses = {
   "default": "I'm here to help with course planning, requirements, and schedules for SFU Computing Science students. What would you like to know about?"
 };
 
-// Mock deadline extraction function - improved to be more flexible
 // Enhanced deadline extraction function
 const extractDeadline = (message: string) => {
   console.log("Trying to extract deadline from:", message);
@@ -352,8 +350,8 @@ const getMonthNumber = (monthName: string) => {
   return months[monthName.toLowerCase()] || "01";
 };
 
-// Create a realistic streaming response from text
-function createStream(text: string) {
+// Create a custom streaming response without using the AI SDK
+function createStreamingResponse(text: string) {
   const encoder = new TextEncoder();
   const stream = new ReadableStream({
     async start(controller) {
@@ -372,7 +370,9 @@ function createStream(text: string) {
     }
   });
   
-  return stream;
+  return new Response(stream, {
+    headers: { 'Content-Type': 'text/plain; charset=utf-8' }
+  });
 }
 
 // Get a response based on keywords in the message
@@ -433,8 +433,8 @@ export async function POST(req: NextRequest) {
     // Generate a response based on the message content
     const responseText = getResponse(lastMessage);
     
-    // Return a streaming response
-    return new StreamingTextResponse(createStream(responseText));
+    // Return a streaming response without using the AI SDK
+    return createStreamingResponse(responseText);
   } catch (error) {
     console.error('Error in chat processing:', error);
     
