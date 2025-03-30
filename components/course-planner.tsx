@@ -8,7 +8,7 @@ import { Badge } from "@/components/ui/badge"
 import { Calendar, ListFilter } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { CalendarView } from "./calendar-view"
-import { RequirementsView } from "./requirements-view"
+import { RequirementsView } from "./requirements/RequirementsView"
 import { useCourseStore } from "@/lib/store"
 
 export function CoursePlanner() {

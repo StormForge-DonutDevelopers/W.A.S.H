@@ -9,7 +9,7 @@ interface Course {
   term: string
 }
 
-interface CourseList {
+export interface CourseList {
   [key: string]: Course[]
 }
 
