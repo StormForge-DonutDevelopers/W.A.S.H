@@ -1,60 +1,30 @@
-// app/api/deadlines/route.ts
+// app/api/deadline/route.ts
 import { NextRequest, NextResponse } from 'next/server'
-import { getSession } from '@auth0/nextjs-auth0'
 import { prisma } from '@/lib/prisma'
 
-// GET - Fetch all deadlines for the current user
-export async function GET(req: NextRequest) {
+// GET - Fetch all deadlines
+export async function GET() {
   try {
-    const session = await getSession()
-    
-    // Check if user is authenticated
-    if (!session?.user?.sub) {
-      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
-        status: 401,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
     const deadlines = await prisma.deadline.findMany({
-      where: { userId: session.user.sub },
+      where: { userId: "anonymous" },
       orderBy: { dueDate: 'asc' },
     })
 
-    return new NextResponse(JSON.stringify(deadlines), {
-      status: 200,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return NextResponse.json(deadlines)
   } catch (error) {
     console.error('Error fetching deadlines:', error)
-    return new NextResponse(JSON.stringify({ error: 'Failed to fetch deadlines' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return NextResponse.json({ error: 'Failed to fetch deadlines' }, { status: 500 })
   }
 }
 
 // POST - Create a new deadline
 export async function POST(req: NextRequest) {
   try {
-    const session = await getSession()
-    
-    // Check if user is authenticated
-    if (!session?.user?.sub) {
-      return new NextResponse(JSON.stringify({ error: 'Unauthorized' }), {
-        status: 401,
-        headers: { 'Content-Type': 'application/json' },
-      })
-    }
-
-    const { title, course, dueDate, description = '' } = await req.json()
+    const { title, course, dueDate, description = '', completed = false } = await req.json()
 
     // Validate required fields
     if (!title || !course || !dueDate) {
-      return new NextResponse(JSON.stringify({ error: 'Missing required fields' }), {
-        status: 400,
-        headers: { 'Content-Type': 'application/json' },
-      })
+      return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
     }
 
     const deadline = await prisma.deadline.create({
@@ -63,20 +33,14 @@ export async function POST(req: NextRequest) {
         course,
         dueDate: new Date(dueDate),
         description,
-        completed: false,
-        userId: session.user.sub,
+        completed,
+        userId: "anonymous", // Fixed value for anonymous users
       },
     })
 
-    return new NextResponse(JSON.stringify(deadline), {
-      status: 201,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return NextResponse.json(deadline, { status: 201 })
   } catch (error) {
     console.error('Error creating deadline:', error)
-    return new NextResponse(JSON.stringify({ error: 'Failed to create deadline' }), {
-      status: 500,
-      headers: { 'Content-Type': 'application/json' },
-    })
+    return NextResponse.json({ error: 'Failed to create deadline' }, { status: 500 })
   }
 }

@@ -1,6 +1,7 @@
 import { DashboardHeader } from "@/components/dashboard-header"
 import { CoursePlanner } from "@/components/course-planner"
 import { ChatbotWindow } from "@/components/chatbot-window"
+import { DeadlineTracker } from "@/components/deadline-tracker"
 
 import Image from 'next/image'
 
@@ -37,19 +38,17 @@ export default function DashboardPage() {
             alt=""
             className="absolute z-[-1] w-[16rem] top-[34rem] left-[48%]"
           />
-{/* 
-          <Image 
-            src={raccoon}
-            alt=""
-            className="absolute z-[-1] top-[34rem] right-[10rem]"
-          /> */}
 
-          {/* <DashboardHeader /> */}
-
-          <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-7">
+          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-7">
             <div className="col-span-4 mt-[10rem]">
               <h2 className="text-4xl mb-[2rem] text-[#FBFBFB] font-display">Course Planner</h2>
               <CoursePlanner />
+              
+              {/* Deadline Tracker below the Course Planner */}
+              <div className="mt-8">
+                <h2 className="text-4xl mb-[2rem] text-[#FBFBFB] font-display">Deadline Tracker</h2>
+                <DeadlineTracker />
+              </div>
             </div>
             <div className="col-span-3 mt-[10rem]">
               <h2 className="text-4xl mb-[2rem] text-[#FBFBFB] font-display">Course Assistant</h2>
@@ -61,4 +60,3 @@ export default function DashboardPage() {
     </div>
   )
 }
-

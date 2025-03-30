@@ -258,23 +258,80 @@ const predefinedResponses = {
 };
 
 // Mock deadline extraction function - improved to be more flexible
+// Enhanced deadline extraction function
 const extractDeadline = (message: string) => {
   console.log("Trying to extract deadline from:", message);
   
   // More flexible pattern matching
-  const assignmentMatch = message.match(/(?:assignment|project|homework|lab|exam|quiz)\s*(\w+|\d+)/i);
-  const courseMatch = message.match(/(?:CMPT|cmpt|MACM|macm)\s*(\d+)/i);
-  const dateMatch = message.match(/(january|february|march|april|may|june|july|august|september|october|november|december)\s*(\d+)/i);
+  const assignmentMatch = message.match(/(?:assignment|project|homework|lab|exam|quiz|paper|report)(?:\s*#?\s*|\s+)(\w+|\d+)?/i);
+  
+  // Match course codes more flexibly
+  const courseMatch = message.match(/(?:CMPT|cmpt|MACM|macm|MATH|math|ENGL|engl|BUS|bus|ECON|econ)\s*(\d+)/i);
+  
+  // More comprehensive date matching
+  // First try to match explicit date formats
+  let dateMatch = message.match(/(january|february|march|april|may|june|july|august|september|october|november|december)\s*(\d{1,2})(?:st|nd|rd|th)?(?:[,\s]+(\d{4}))?/i);
+  
+  // If no explicit date, try to match relative dates
+  if (!dateMatch) {
+    const relativeMatch = message.match(/(next|this)\s+(monday|tuesday|wednesday|thursday|friday|saturday|sunday|week)/i);
+    
+    if (relativeMatch) {
+      // Calculate date based on relative reference
+      const today = new Date();
+      let targetDate = new Date();
+      
+      if (relativeMatch[1].toLowerCase() === 'next') {
+        targetDate.setDate(today.getDate() + 7); // Next week
+      }
+      
+      // Adjust for specific day of week
+      const dayOfWeek = relativeMatch[2].toLowerCase();
+      if (dayOfWeek !== 'week') {
+        const daysMap = { 'monday': 1, 'tuesday': 2, 'wednesday': 3, 'thursday': 4, 'friday': 5, 'saturday': 6, 'sunday': 0 };
+        const targetDay = daysMap[dayOfWeek];
+        
+        // Calculate days to add
+        const currentDay = today.getDay();
+        let daysToAdd = targetDay - currentDay;
+        if (daysToAdd <= 0) daysToAdd += 7;
+        
+        targetDate.setDate(today.getDate() + daysToAdd);
+      }
+      
+      // Create a format that mimics the explicit date match
+      const months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
+      dateMatch = [
+        null, // Full match (not used)
+        months[targetDate.getMonth()], // Month name
+        targetDate.getDate().toString(), // Day
+        targetDate.getFullYear().toString() // Year
+      ];
+    }
+  }
   
   console.log("Matches:", { assignmentMatch, courseMatch, dateMatch });
   
-  if (assignmentMatch && courseMatch && dateMatch) {
-    const title = assignmentMatch[0].charAt(0).toUpperCase() + assignmentMatch[0].slice(1);
+  // If we have both assignment and course, we can create a deadline
+  if ((assignmentMatch || message.toLowerCase().includes('assignment')) && courseMatch) {
+    // For assignment, use the matched text or default to "Assignment"
+    const assignmentTitle = assignmentMatch 
+      ? assignmentMatch[0].charAt(0).toUpperCase() + assignmentMatch[0].slice(1) 
+      : "Assignment";
+    
+    // Current date as fallback if no date specified
+    const today = new Date();
+    today.setDate(today.getDate() + 7); // Default to one week from now
+    
+    const year = dateMatch && dateMatch[3] ? parseInt(dateMatch[3]) : 2025;
+    const month = dateMatch ? getMonthNumber(dateMatch[1]) : (today.getMonth() + 1).toString().padStart(2, '0');
+    const day = dateMatch ? dateMatch[2].padStart(2, '0') : today.getDate().toString().padStart(2, '0');
+    
     const deadline = {
-      title: title,
+      title: assignmentTitle,
       course: `${courseMatch[0].toUpperCase()}`,
-      dueDate: `2025-${getMonthNumber(dateMatch[1])}-${dateMatch[2].padStart(2, '0')}T23:59:00Z`,
-      description: "Extracted from your request"
+      dueDate: `${year}-${month}-${day}T23:59:00Z`,
+      description: "Added from chat assistant"
     };
     
     console.log("Created deadline:", deadline);
@@ -356,10 +413,22 @@ function getResponse(message: string) {
 
 export async function POST(req: NextRequest) {
   try {
-    const { messages } = await req.json();
+    // Parse the incoming request body with error handling
+    const body = await req.json();
+    
+    // Check if messages exists and is an array
+    if (!body || !body.messages || !Array.isArray(body.messages) || body.messages.length === 0) {
+      return new Response(
+        JSON.stringify({ 
+          error: 'Invalid request format',
+          message: "I didn't receive a valid message. How can I help you?"
+        }), 
+        { status: 200, headers: { 'Content-Type': 'application/json' } }
+      );
+    }
     
     // Get the last message from the user
-    const lastMessage = messages[messages.length - 1].content;
+    const lastMessage = body.messages[body.messages.length - 1].content;
     
     // Generate a response based on the message content
     const responseText = getResponse(lastMessage);
