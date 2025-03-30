@@ -138,7 +138,7 @@ export function CoursePlanner() {
                                 ref={provided.innerRef}
                                 {...provided.draggableProps}
                                 {...provided.dragHandleProps}
-                                className="mb-2 rounded-md bg-background p-3 shadow-sm"
+                                className="mb-2 rounded-md bg-[#FFFFFF] p-3 shadow-sm"
                               >
                                 <div className="font-medium">{course.code}</div>
                                 <div className="text-sm text-muted-foreground">{course.name}</div>
