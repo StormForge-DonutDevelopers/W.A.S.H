@@ -808,7 +808,7 @@ export function EnhancedChatbot() {
               <div className="space-y-4">
                 {showWelcome && (
                   <div className="flex justify-start message-container">
-                    <div className="rounded-lg px-4 py-2 max-w-[80%] bg-muted text-foreground">
+                    <div className="rounded-lg px-4 py-2 max-w-[80%] bg-muted text-[#000]">
                       <p>Hi there! I'm your SFU course assistant. Ask me about courses, requirements, scheduling, or help me track your assignments and deadlines.</p>
                       <p className="text-xs opacity-70 mt-1">
                         {new Date().toLocaleTimeString([], { hour: "2-digit", minute: "2-digit" })}
