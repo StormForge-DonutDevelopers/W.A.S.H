@@ -80,7 +80,6 @@ export const DEGREE_REQUIREMENTS = [
       courses: [
         { title: "CMPT 307", name: "Data Structures and Algorithms", credits: 3 },
         { title: "CMPT 376W", name: "Professional Responsibility and Technical Writing", credits: 3 },
-        { title: "MACM 316", name: "Numerical Analysis I", credits: 3 },
         
         // AI
         { title: "CMPT 310", name: "Introduction to Artificial Intelligence", credits: 3 },
