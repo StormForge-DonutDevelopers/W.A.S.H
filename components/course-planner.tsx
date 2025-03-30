@@ -51,7 +51,7 @@ export function CoursePlanner() {
   }
 
   return (
-    <Card className="h-full">
+    <Card className="h-[600px]">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center gap-2">

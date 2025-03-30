@@ -1,7 +1,10 @@
 import "./globals.css"
-import { Inter } from 'next/font/google'
+import { Fira_Sans } from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"] })
+const fira_sans = Fira_Sans({ 
+  subsets: ["latin"], 
+  weight: "400"
+});
 
 export const metadata = {
   title: "WASH - Weekly Academic Schedule Helper",
@@ -15,7 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={fira_sans.className}>{children}</body>
     </html>
   )
 }
