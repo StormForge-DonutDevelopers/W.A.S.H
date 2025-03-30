@@ -80,6 +80,7 @@ export const DEGREE_REQUIREMENTS = [
       courses: [
         { title: "CMPT 307", name: "Data Structures and Algorithms", credits: 3 },
         { title: "CMPT 376W", name: "Professional Responsibility and Technical Writing", credits: 3 },
+        { title: "MACM 316", name: "Numerical Analysis I", credits: 3 },
         
         // AI
         { title: "CMPT 310", name: "Introduction to Artificial Intelligence", credits: 3 },
@@ -173,25 +174,4 @@ export const DEGREE_REQUIREMENTS = [
         { title: "PSYC 100", name: "Introduction to Psychology I", credits: 3 },
       ]
   },
-  {
-      name: "Depth Requirement",
-      required: 12,
-      description: "Twelve units of additional CMPT courses numbered 400 or above (excluding CMPT 415, 416, and 498, which require special permission)."
-  },
-  {
-      name: "BSc Credential Additional Requirements",
-      required: 3,
-      courses: [
-          { title: "MACM 316", name: "Numerical Analysis I", credits: 3 },
-          "Two additional courses from Table I, II, or III"
-      ]
-  },
-  {
-      name: "BA Credential Additional Requirements",
-      required: 3,
-      courses: [
-          "One additional CMPT upper-division course from Table I or II",
-          "15 units in a Faculty of Arts and Social Sciences discipline, including 6 upper-division credits"
-      ]
-  }
 ];
