@@ -1,14 +1,20 @@
 "use client"
 
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import { DragDropContext, Droppable, Draggable } from "@hello-pangea/dnd"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { Calendar, ListFilter } from "lucide-react"
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
 import { CalendarView } from "./calendar-view"
-import { RequirementsView } from "./requirements-view"
+import { RequirementsView } from "./requirements/RequirementsView"
 import { useCourseStore } from "@/lib/store"
 
 export function CoursePlanner() {
@@ -19,7 +25,12 @@ export function CoursePlanner() {
     term: "",
   })
 
-  const { courses, moveCourse } = useCourseStore()
+  const { courses, moveCourse, loadInitialCourses } = useCourseStore()
+
+  // Load the initial courses on component mount
+  useEffect(() => {
+    loadInitialCourses()
+  }, [loadInitialCourses])
 
   const handleDragEnd = (result: any) => {
     if (!result.destination) return
@@ -91,7 +102,10 @@ export function CoursePlanner() {
                   <SelectItem value="macm">Mathematics/Computing</SelectItem>
                 </SelectContent>
               </Select>
-              <Select value={filters.level} onValueChange={(value) => setFilters((f) => ({ ...f, level: value }))}>
+              <Select
+                value={filters.level}
+                onValueChange={(value) => setFilters((f) => ({ ...f, level: value }))}
+              >
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Level" />
                 </SelectTrigger>
@@ -102,7 +116,10 @@ export function CoursePlanner() {
                   <SelectItem value="400">400 Level</SelectItem>
                 </SelectContent>
               </Select>
-              <Select value={filters.term} onValueChange={(value) => setFilters((f) => ({ ...f, term: value }))}>
+              <Select
+                value={filters.term}
+                onValueChange={(value) => setFilters((f) => ({ ...f, term: value }))}
+              >
                 <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Term" />
                 </SelectTrigger>
@@ -165,4 +182,3 @@ export function CoursePlanner() {
     </Card>
   )
 }
-
