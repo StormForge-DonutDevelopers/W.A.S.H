@@ -62,7 +62,7 @@ export function CoursePlanner() {
   }
 
   return (
-    <Card className="h-full">
+    <Card className="h-[40rem]">
       <CardHeader>
         <div className="flex items-center justify-between">
           <CardTitle className="flex items-center gap-2">
@@ -73,9 +73,9 @@ export function CoursePlanner() {
             <Button variant={viewMode === "list" ? "default" : "outline"} onClick={() => setViewMode("list")}>
               List View
             </Button>
-            <Button variant={viewMode === "calendar" ? "default" : "outline"} onClick={() => setViewMode("calendar")}>
+            {/* <Button variant={viewMode === "calendar" ? "default" : "outline"} onClick={() => setViewMode("calendar")}>
               Calendar View
-            </Button>
+            </Button> */}
             <Button
               variant={viewMode === "requirements" ? "default" : "outline"}
               onClick={() => setViewMode("requirements")}
@@ -120,14 +120,14 @@ export function CoursePlanner() {
                 value={filters.term}
                 onValueChange={(value) => setFilters((f) => ({ ...f, term: value }))}
               >
-                <SelectTrigger className="w-[180px]">
+                {/* <SelectTrigger className="w-[180px]">
                   <SelectValue placeholder="Term" />
                 </SelectTrigger>
                 <SelectContent>
                   <SelectItem value="fall">Fall 2024</SelectItem>
                   <SelectItem value="spring">Spring 2025</SelectItem>
                   <SelectItem value="summer">Summer 2025</SelectItem>
-                </SelectContent>
+                </SelectContent> */}
               </Select>
             </div>
             <Button variant="outline" onClick={() => setFilters({ department: "", level: "", term: "" })}>
@@ -145,7 +145,7 @@ export function CoursePlanner() {
                       <div
                         ref={provided.innerRef}
                         {...provided.droppableProps}
-                        className="rounded-lg border bg-muted p-4"
+                        className="rounded-lg border bg-muted p-4 overflow-y-scroll h-[30rem]"
                       >
                         <h3 className="mb-4 font-semibold capitalize">{listId} Courses</h3>
                         {filterCourses(items).map((course, index) => (
