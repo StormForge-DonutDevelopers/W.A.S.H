@@ -9,7 +9,7 @@
   :root {
     --background: 176 38% 76%;
 
-    --foreground: 0 0% 98%;
+    --foreground: 0 0% 0%;
 
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
@@ -17,8 +17,8 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
  
-    --primary: 206 57% 56%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 0 0% 0%;
+    --primary-foreground: 0 0% 0%;
  
     --secondary: 42 98% 53%;
     --secondary-foreground: 222.2 47.4% 11.2%;

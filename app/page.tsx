@@ -9,7 +9,7 @@ import './main.css'
 import bubbles from '../lib/images/bubbles.svg'
 import mirror from '../lib/images/mirror.svg'
 import duck from '../lib/images/duck.png'
-//import raccoon from '../lib/images/raccoon.png'
+import raccoon from '../lib/images/raccoon.svg'
 
 export default function DashboardPage() {
   return (
@@ -27,17 +27,23 @@ export default function DashboardPage() {
             <p className="text-xl mt-[-0.5rem] mb-[31.5rem]">What are your plans for today?</p>
           </div>
 
-          <Image 
+          {/* <Image 
             src={bubbles}
             alt=""
             className="absolute z-[-100] left-0 top-[-8.5rem]"
-          />
+          /> */}
 
           <Image 
+            src={raccoon}
+            alt=""
+            className="absolute z-[-100] w-[40rem] right-[5rem] top-[2rem]"
+          />
+
+          {/* <Image 
             src={duck}
             alt=""
             className="absolute z-[-1] w-[16rem] top-[34rem] left-[48%]"
-          />
+          /> */}
 
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-7">
             <div className="col-span-4 mt-[10rem]">
