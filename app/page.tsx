@@ -1,4 +1,4 @@
-import { DashboardHeader } from "@/components/dashboard-header"
+//import { DashboardHeader } from "@/components/dashboard-header"
 import { CoursePlanner } from "@/components/course-planner"
 import { ChatbotWindow } from "@/components/chatbot-window"
 import { DeadlineTracker } from "@/components/deadline-tracker"
