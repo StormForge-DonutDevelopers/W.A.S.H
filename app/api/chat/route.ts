@@ -277,7 +277,7 @@ const extractDeadline = (message: string) => {
     if (relativeMatch) {
       // Calculate date based on relative reference
       const today = new Date();
-      let targetDate = new Date();
+      const targetDate = new Date();
       
       if (relativeMatch[1].toLowerCase() === 'next') {
         targetDate.setDate(today.getDate() + 7); // Next week

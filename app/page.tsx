@@ -1,4 +1,4 @@
-import { DashboardHeader } from "@/components/dashboard-header"
+//import { DashboardHeader } from "@/components/dashboard-header"
 import { CoursePlanner } from "@/components/course-planner"
 import { ChatbotWindow } from "@/components/chatbot-window"
 import { DeadlineTracker } from "@/components/deadline-tracker"
@@ -9,7 +9,7 @@ import './main.css'
 import bubbles from '../lib/images/bubbles.svg'
 import mirror from '../lib/images/mirror.svg'
 import duck from '../lib/images/duck.png'
-import raccoon from '../lib/images/raccoon.png'
+//import raccoon from '../lib/images/raccoon.png'
 
 export default function DashboardPage() {
   return (
