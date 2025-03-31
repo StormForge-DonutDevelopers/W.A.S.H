@@ -45,7 +45,7 @@ export default function DashboardPage() {
             className="absolute z-[-1] w-[16rem] top-[34rem] left-[48%]"
           /> */}
 
-          <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-7">
+          <div className="">
             <div className="col-span-4 mt-[10rem]">
               <h2 className="text-4xl mb-[2rem] text-[#FBFBFB] font-display">Course Planner</h2>
               <CoursePlanner />
