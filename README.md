@@ -26,3 +26,8 @@ bun dev
 ```
 
 Second, open http://localhost:3000 with your browser to see the result! 
+
+Dev Notes:
+- using Gemini as chatbot: google AI studio (generate API key from within Google Cloud Console, Generative Language API key doesn't work)
+- using Prisma + Supabase for database to store user deadlines
+- in the future, try to deploy on Netlify or Render
